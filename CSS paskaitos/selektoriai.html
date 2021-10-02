@@ -13,7 +13,8 @@
             line-height: 20px;
         }
 
-        #header{
+        /* gali rasyt ,p ir kad per du kartus nerasyt galima sujungti i viena kad ir sitas elementas ir tas elementas */
+        #header, p{
             /* viskas kas bus cia bus kas pazymeta id="header" */
             text-align: center;
         }
@@ -26,6 +27,10 @@
         [type= "text"]{
             background-color: gold;
         }
+
+        p.content span{
+            color: red;
+        }
     </style>
 </head>
 <body>
@@ -35,8 +40,12 @@
 
     <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, ullam. Minima in eligendi, iste molestiae dolore non dicta fugiat voluptas commodi! Distinctio velit doloribus delectus qui voluptatem, corporis harum minima!</p>
 
-    <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error illum esse suscipit vero praesentium, labore numquam voluptatum fugiat. Fugiat architecto ab asperiores laborum error numquam saepe debitis, repellendus porro aspernatur.</p>
-
+    <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error illum esse suscipit <span>vero</span> praesentium, labore numquam voluptatum fugiat. Fugiat architecto ab asperiores laborum error numquam saepe debitis, repellendus porro aspernatur.</p>
+    
+    <!-- sito nenudaze nes paemem is p elemento -->
+    <span>tiesiog tekstas</span>
+    
+    
     <input type="text">
     <input type="text">
     <input type="text">
