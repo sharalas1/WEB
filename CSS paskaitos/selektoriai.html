@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* . reiskia kad imsiu kaip selektoriu kurie turi class="content" */
+        .content{
+            /* viskas kas bus cia keisis antram ir treciam paragrafe */
+            word-spacing: 15px;
+            line-height: 20px;
+        }
+
+        #header{
+            /* viskas kas bus cia bus kas pazymeta id="header" */
+            text-align: center;
+        }
+
+        /*   *   naudojam VISIEMS ELEMENTAMS */
+        *{
+            /*border: 1px solid black*/
+        }
+/* visi kurie elementai turi type text tai prisiskirs */
+        [type= "text"]{
+            background-color: gold;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="header">CSS selektoriai</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, dicta eveniet reprehenderit in tempora quibusdam minus voluptates quaerat voluptate iure facilis, velit et. Iste minima ipsa ipsam, autem aliquid cumque!</p>
+
+    <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, ullam. Minima in eligendi, iste molestiae dolore non dicta fugiat voluptas commodi! Distinctio velit doloribus delectus qui voluptatem, corporis harum minima!</p>
+
+    <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error illum esse suscipit vero praesentium, labore numquam voluptatum fugiat. Fugiat architecto ab asperiores laborum error numquam saepe debitis, repellendus porro aspernatur.</p>
+
+    <input type="text">
+    <input type="text">
+    <input type="text">
+    <input type="submit">
+
+</body>
+</html>
