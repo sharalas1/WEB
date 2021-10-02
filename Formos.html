@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formos</title>
+</head>
+<body>
+    <!-- nutrini kabutes  ir = ir ismeta pasirinkimus -->
+    <!-- jie yra linijiniai -->
+    
+    
+    <!-- <input type="button" value="OK">
+    <input type="text">
+    <input type="checkbox">
+    <input type="color">
+    <input type="date">
+    <input type="radio" value="paspaudi ir viskas"> -->
+
+<h2>prisijungimo forma</h2>
+<!-- etikete label ir reikia nurodyti kam priskirti-->
+
+
+<!-- kai parasai name="" tai per inspect gali matyti tavo varda ir slaptazodi -->
+
+<!-- <form> kad padaryti graziau atskira dalyka -->
+<form action="formos.html" method="POST">
+
+<!-- div naudojam kad atskirti  -->
+<!-- required naudojam kad butina parasyti ismeta errora -->
+    <div>
+        <label for="username">Prisijungimo vardas</label>
+        <input required type="text" id="username" name="username"
+        autocomplete="off">
+    </div>
+    
+    <div>
+        <label for="password">Slaptazodis</label>
+    <input required type="password" id="password" name="password" autocomplete="off">
+    </div>
+
+    <!-- autocemplete kad nemestu username pasiulymu -->
+    <!-- kad nesimatytu passwordas tai naudoji ne text o password fukncija -->
+   
+    
+    <!-- mygtukas -->
+    <!-- kad pakeisti submit i savo tai rasyt value="" ir savo teksta -->
+    <div>
+        <input type="submit" value="spausk">
+    </div>
+
+</form>
+<!-- tr eilutes, td langelis -->
+<!-- border galima paziuret naudot kaip atrodo bus su linijom-->
+
+<!-- fieldset pazymi info ka viduj rasai -->
+<fieldset>
+    <!-- fieldset galima uzdeti etikete -->
+    <legend>Prisijungimas</legend>
+<table border=>
+    <tr>
+        <td><label for="username">Prisijungimo vardas</label></td>
+        <td> <input type="text" id="username" name="username"
+            autocomplete="off"></td>
+    </tr>
+    <tr>
+        <td> <label for="password">Slaptazodis</label></td>
+        <td><input type="password" id="password" name="password" autocomplete="off"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><input type="submit" value="spausk"></td>
+    </tr>
+</table>
+</fieldset>
+
+<div>
+    <label for="">Pasirinkite megstama spalva</label>
+    <input type="radio" name ="color"> Melyna
+    <input type="radio" name="color"> Zalia
+    <input type="radio" name="color"> Raudona
+</div>
+
+<!-- kad butu pasirinkimu lentele -->
+<!-- value tai ka siusim i back enda -->
+<div>
+    <label for="">pasirinkite lyti</label>
+    <select name="" id="">
+        <option value="v">vyras</option>
+        <option value="m">moteris</option>
+    </select>
+</div>
+
+<!-- parado lauka rasyti -->
+<!-- placeholder tai naudoji pvz kai yra laukas jis pilkas pradedi rasyt jis dingsta -->
+<div>
+    <label for="">parasykite komentara</label>
+    <textarea name="" id="" cols="30" rows="10" placeholder="parasykite komentariuka"></textarea>
+</div>
+
+
+
+</body>
+</html>
+
+
+
+<!-- kai prie linko yra spynele tai yra tunelis nematys duomenu, kai nera neveskit nes bus atviri duomenys -->
