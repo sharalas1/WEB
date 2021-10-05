@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media</title>
+    <style>
+        /* kad butu horiontaliai vienas prie kito rasom taip */
+        .row {
+            display: flex;
+            /* jis numeta dezute jeigu susiaurini ekrana */
+            flex-wrap: wrap;
+        }
+
+        div.child {
+            /* visais atvejais uzima tiek proc kiek parasyta */
+            width: 25%;
+            /* min-height: 200px;
+            background-color: tomato; */
+            /* margin: 5px; */
+        }
+
+        /* max plotis iki 600px parasem. prisitaikys prie skirtingu ekrano plocio. viskas kas yra daugiau negu 600px rodys div.child procesa */
+        @media screen and (max-width:600px) {
+            div.child {
+                width: 100%;
+            }
+        }
+
+        div.content {
+            margin: 5px;
+            background-color:teal;
+            min-height: 200px;
+            padding: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* padarem kad nuo kazkie kiki kazkiek pixeliu kad nebutu taip kad mano pc veikia kitam neveikia. cia skaitosi prisitaikantis dizainas */
+        @media screen and(min-width:601px) and (max-width:900px) {
+            div.child {
+                width: 33proc;
+            }
+        }
+
+        img {
+            /* paveiksliukui VISADA uzdeti 100% */
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <div class="child">
+            <div class="content">
+                <img src="picture.jpg" alt="">
+                <p>sunkus darbas</p>
+                <p>neapsikrauk</p>
+            </div>
+        </div>
+        <div class="child">
+            <div class="content">
+                <img src="https://picsum.photos/482/273?random=1">
+                <p>gfdgdbd</p>
+                <p>vdvdvdu</p>
+            </div>
+        </div>
+        <div class="child">
+            <div class="content"><img src="https://picsum.photos/481/273?random=1">
+                <p>vfdbgdfhgd</p>
+                <p>fdsf</p>
+            </div>
+        </div>
+        <div class="child">
+            <div class="content"><img src="https://picsum.photos/482/272?random=1">
+            <p>gfdgdg</p>
+            <p>gfdbgdg</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

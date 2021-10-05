@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dezutes</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: blueviolet;
+            /* padding ziuri kas dezutes viduje */
+            padding-left: 15px;
+            padding-right: 15px;
+            /* border: 5px dashed green; */
+            border-bottom: 5px dashed green;
+            /* apvalina kampus */
+            border-radius: 20px;
+            text-align: center;
+            /* margin atstumia */
+            margin: 5px;
+            box-shadow: 2px 2px 5px black;
+        }
+
+        .text{
+            overflow: scroll;
+        }
+
+        .text, .image{
+            overflow: hidden;
+        }
+
+        img{
+            /* cia geriau naudoti procentus o ne pixelius */
+            width: 100%;
+        }
+
+        .first{
+            /* sitas paslepia. paslepia nuo akiu mes nematos bet jis vieta uzima */
+            visibility: hidden;
+        }
+
+        .second{
+            /* sitas panaikina visiskai */
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="first">A</div>
+    <div class="second">B</div>
+    <!-- cia yra overflow -->
+    <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, quaerat enim nihil ex omnis placeat autem delectus, est atque cumque aspernatur ducimus doloribus. Voluptatem, impedit enim repudiandae necessitatibus ea magni.</div>
+    <div class="image">
+        <img src="picture.jpg" alt="">
+    </div>
+</body>
+</html>

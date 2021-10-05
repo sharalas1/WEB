@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo klases</title>
+    <style>
+        a{
+            /* kad nuimti nuo nuodoros pabraukima rasom taip, galima rasyt underline kad pabrauktu */
+            text-decoration: none;
+        }
+/* kai uzvesi su pelyte ant a elemento bus toks stilius koks parasytas cia arba pridedi id kad butu tik tam
+arba rasai a:first-child:hover
+galima su id rasyt a#school:hover/#school:hover*/
+        a:hover{
+            background-color: black;
+        }
+
+        a:first-child{
+            /* vietoj large small ir pns galima rasyt skaicius pvz 30pt */
+            font-size: xx-large;
+        }
+        /* imam paskutini elementa */
+        a:last-child{
+            color: red;
+        }
+/* spalivam stulpelius ir rasom () kas kelinta spalvinam 2n pvz tai bus kas antras ir tt*/
+        tr:nth-child(2n){
+            background-color: silver;
+        }
+
+        table{
+            /* kad lentelei pasaltinu tarpelius taip rasom */
+            border-collapse: collapse;
+        }
+
+        tr:hover{
+            /* uzvesi su pelyte ir stulpelio linijas matysi, tik juda o kai juda blogai nes gali sugriauti struktura tai nedarom tokiu dalyku geriau yra background color*/
+            /* border: 1px solid black; */
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- jei pridesi daugiau elementu viskas galios kas aprasyta virsuj arba priskiri id kad tik galioju tik tam kuriam nori-->
+    <a href="https://vilniuscoding.lt" id="school">Mokykla</a>
+    <a href="https://15min.lt">Pradzia</a>
+    <a href="https://delfi.lt">Pabaiga</a>
+
+
+    <table>
+        <tr>
+            <td>1</td><td>1</td>
+        </tr>
+        <tr>
+            <td>2</td><td>2</td>
+        </tr>
+        <tr>
+            <td>3</td><td>3</td>
+        </tr>
+        <tr>
+            <td>4</td><td>4</td>
+        </tr>
+        <tr>
+            <td>5</td><td>5</td>
+        </tr>
+        <tr>
+            <td>6</td><td>6</td>
+        </tr>
+    </table>
+</body>
+</html>
