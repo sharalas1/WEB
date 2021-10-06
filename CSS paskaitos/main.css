@@ -1,0 +1,74 @@
+/* kad butu horiontaliai vienas prie kito rasom taip */
+.row {
+    display: flex;
+    /* jis numeta dezute jeigu susiaurini ekrana */
+    flex-wrap: wrap;
+}
+
+div.child {
+    /* visais atvejais uzima tiek proc kiek parasyta */
+    width: 25%;
+    /* min-height: 200px;
+    background-color: tomato; */
+    /* margin: 5px; */
+}
+
+.container {
+    margin: auto;
+    width: 70%;
+}
+
+/* max plotis iki 600px parasem. prisitaikys prie skirtingu ekrano plocio. viskas kas yra daugiau negu 600px rodys div.child procesa, siauriems ekranams */
+@media screen and (max-width:600px) {
+    div.child {
+        width: 100%;
+    }
+
+    .container {
+        width: 100%;
+    }
+}
+
+div.content {
+    margin: 5px;
+    background-color: teal;
+    min-height: 200px;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* padarem kad nuo kazkiek iki kazkiek pixeliu kad nebutu taip kad mano pc veikia kitam neveikia. cia skaitosi prisitaikantis dizainas, vidutiniems ekranams */
+@media screen and(min-width:601px) and (max-width:900px) {
+    div.child {
+        width: 33proc;
+    }
+
+    .container {
+        width: 70%;
+    }
+}
+
+img {
+    /* paveiksliukui VISADA uzdeti 100% */
+    width: 100%;
+}
+
+header {
+    background-image: url("miskas.jpg");
+    color: whitesmoke;
+}
+
+header h1 {
+    padding: 8%;
+    text-align: center;
+}
+
+footer address {
+    padding: 50px;
+    text-align: center;
+    color: white;
+}
+
+footer {
+    background-color: red;
+}

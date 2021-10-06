@@ -1,0 +1,25 @@
+ul{
+    list-style-type: none;
+}
+
+nav ul{
+    display: flex;
+    background-color: red;
+    /* jeigu nori vienodo storio juosteles */
+    /* padding: 8px; */
+    /* kad sucentruotu meniu */
+    justify-content: center;
+}
+/* elemente nav kuris turi elementa ul ir jame yra elementas li pasirenkam elementa a */
+nav ul li a{
+    padding: 8px;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+/* uzvedus su pelyte: */
+nav ul li a:hover{
+    background-color: white;
+    color: red;
+}
