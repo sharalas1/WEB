@@ -10,10 +10,10 @@
 
 <body>
 
-<input type="text" id="x">
-<input type="text" id="y">
-<input type="button" value="ok" id="button">
-<h1 id="result">0</h1>
+    <input type="text" id="x">
+    <input type="text" id="y">
+    <input type="button" value="ok" id="button">
+    <h1 id="result">0</h1>
 
     <script>
         // du butai aprasyti kintamuosius
@@ -26,16 +26,16 @@
         // document.querySelector("body").innerText = sum;
 
 
-document.querySelector("#button").addEventListener("click", function(){
-    let x = document.querySelector("#x").value; // tik formos elementai turi value
-    let y = document.querySelector("#y").value;
+        document.querySelector("#button").addEventListener("click", function () {
+            let x = document.querySelector("#x").value; // tik formos elementai turi value
+            let y = document.querySelector("#y").value;
 
-    let sum = Number(x) + Number(y);
+            let sum = Number(x) + Number(y);
 
-    document.querySelector("#result").innerText = sum;
+            document.querySelector("#result").innerText = sum;
 
 
-})
+        })
 
 
     </script>
