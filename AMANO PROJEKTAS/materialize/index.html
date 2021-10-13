@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- meta vienintelis dalykas kuri isimetem patys, visa kita is interneto copy paste -->
+    <meta charset="UTD-8">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+        .section-height {
+            min-height: 100vh;
+        }
+
+        footer {
+            /* vh vertical hight jis sukonviguruos automatiskai ploti prie visu ekranu */
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .address {
+            width: 400px;
+        }
+
+        .card {
+            min-height: 380px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- navbar pradzia -->
+
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo">Automobiliu nuoma</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="index.html">Pagrindinis</a></li>
+                <li><a href="#main">Paslaugos</a></li>
+                <li><a href="#footer">Kontaktai</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="index.html">Pagrindinis</a></li>
+        <li><a href="#main">Paslaugos</a></li>
+        <li><a href="#footer">Kontaktai</a></li>
+    </ul>
+
+    <!-- navbar pabaiga -->
+
+
+    <!-- slider pradzia -->
+
+    <div class="slider">
+        <ul class="slides">
+            <li>
+                <img src="https://cdn.motor1.com/images/mgl/PKZQL/s1/1997-toyota-supra-sold-for-176-000-at-auction.webp"> <!-- random image -->
+                <div class="caption center-align">
+                    <h3>Automobiliu nuoma be pradinio inaso!</h3>
+                    <h5 class="light grey-text text-lighten-3">Nuomojame priziuretus automobilius pasirinktam laikui
+                    </h5>
+                </div>
+            </li>
+            <li>
+                <img src="https://i.pinimg.com/originals/35/cc/61/35cc610812203946c00d8873ffeb3889.jpg"> <!-- random image -->
+                <div class="caption left-align">
+                    <h3>Atliekame menini lyginima</h3>
+                    <h5 class="light grey-text text-lighten-3">Galime atlikti darbus jusu automobilio kebului</h5>
+                </div>
+            </li>
+            <li>
+                <img src="https://i.ytimg.com/vi/4XI6BalOA0U/maxresdefault.jpg"> <!-- random image -->
+                <div class="caption right-align">
+                    <h3>Atliekame ratu remonta</h3>
+                    <h5 class="light grey-text text-lighten-3">Galime uzsiimti jusu automobilio ratu defektais</h5>
+                </div>
+            </li>
+            <li>
+                <img src="https://i.pinimg.com/originals/0e/50/c2/0e50c2395ce120082508aa6ac80ef16b.jpg"> <!-- random image -->
+                <div class="caption center-align">
+                    <h3>Atliekame automobilio diagnostika pries tech apziura</h3>
+                    <h5 class="light grey-text text-lighten-3">Atlikus diagnostika galime vietoj pasalinti defektus</h5>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- slider pabaiga -->
+
+
+
+    <!-- parallax pradzia -->
+
+
+    <div id="main" class="section white section-height">
+        <div class="row container">
+            <h2 class="header">Musu katalogas</h2>
+            <p class="grey-text text-darken-3 lighten-3">Kiekviena automobili pries jums duodant jam padarome chemini
+                valyma, dezinfekuojame bei sutvarkome.</p>
+        </div>
+
+
+
+        <div class="row container" id="container">
+            <!-- col m4 rasom foto dydzius net yra info internete -->
+            <div class="col m3 s12">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="https://autoplius-img.dgn.lt/ann_25_181360827/bmw-m4-3-0-l-kupe-coupe-2020-benzinas.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">BMW M4<i
+                                class="material-icons right">more_vert</i></span>
+                        <p>BMW M4 3.0l benzinas coupe 2015 metu</p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">BMW M4<i
+                                class="material-icons right">close</i></span>
+                        <p>Automobilis norintiems pajusti galia.</p>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            <div class="col m3 s12">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="https://autoplius-img.dgn.lt/ann_25_178582097/audi-a5-sportback-2-7-l-hecbekas-2010-dyzelinas.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Audi A5<i
+                                class="material-icons right">more_vert</i></span>
+                        <p>Audi A5 Sportback 2.7l dyzelinas sedanas 2010 metu</p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Audi A5 Sportback<i
+                                class="material-icons right">close</i></span>
+                        <p>Modernus Audi su pribambasais</p>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            <div class="col m3 s12">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="https://autoplius-img.dgn.lt/ann_25_182889439/subaru-impreza-wrx-2-0-l-sedanas-2019-benzinas.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Subaru Impreza WRX<i
+                                class="material-icons right">more_vert</i></span>
+                        <p>Subaru Impreza WRX 2.0l benzinas sedanas 2019 metu</p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Subaru Impreza WRX<i
+                                class="material-icons right">close</i></span>
+                        <p>Modernus ralio dalyvis!</p>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            <div class="col m3 s12">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="https://autoplius-img.dgn.lt/ann_25_170383219/volvo-s90-2-0-l-sedanas-2020-benzinas.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Volvo S90<i
+                                class="material-icons right">more_vert</i></span>
+                        <p>Volvo S90 2.0l benzinas sedanas 2020 metu</p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Volvo S90<i
+                                class="material-icons right">close</i></span>
+                        <p>Jeigu esi senjoras su pinigu kruva sis automobilis kaip tik tau</p>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            <div class="col m3 s12">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="https://s1.15min.lt/images/photos/2018/11/21/original/mercedes-benz-g63-amg-5bf59a481b1d9.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">MB G63 AMG<i
+                                class="material-icons right">more_vert</i></span>
+                        <p>MB G63 AMG 4.0l benzinas visureigis 2018 metu</p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">MB G63 AMG<i
+                                class="material-icons right">close</i></span>
+                        <p>Gelikas tik rimtiems vilkams</p>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            <div class="col m3 s12">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/2020-lexus-gs-mmp-1-1574354422.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Lexus GS 350<i
+                                class="material-icons right">more_vert</i></span>
+                        <p>Lexus GS 350 hibridinis sedanas 2020 metu</p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Lexus GS 350<i
+                                class="material-icons right">close</i></span>
+                        <p>Tiesiog prabandus sedanas</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <div class="parallax-container">
+        <div class="parallax"><img src="images/road.jpg"></div>
+    </div>
+
+    <!-- parallax pabaiga -->
+
+
+    <!-- footer pradzia -->
+
+
+    <footer id="footer" class="blue darken-4">
+        <div class="address">
+            <h3 class="center white-text">Susisiekite</h3>
+            <address>
+                <p class="center white-text">automobiliu.nuoma@gmail.com</p>
+                <p class="center white-text">+37068454555</p>
+            </address>
+        </div>
+    </footer>
+
+
+
+
+    <!-- footer pabaiga -->
+
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="js/library.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.sidenav');
+            var options = {};
+            var instances = M.Sidenav.init(elems, options);
+        });
+
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.slider');
+            var options = {};
+            var instances = M.Slider.init(elems, options);
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.parallax');
+            var options = {};
+            var instances = M.Parallax.init(elems, options);
+        });
+    </script>
+    <script>
+        getStudents().then(data => displayStudents(data, document.getElementById("container")))
+    </script>
+</body>
+
+</html>
