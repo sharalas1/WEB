@@ -30,7 +30,7 @@
         }
 
         .card {
-            min-height: 370px;
+            min-height: 380px;
         }
     </style>
 </head>
@@ -111,7 +111,7 @@
 
 
 
-        <div class="row container">
+        <div class="row container" id="container">
             <!-- col m4 rasom foto dydzius net yra info internete -->
             <div class="col m3 s12">
                 <div class="card">
@@ -130,7 +130,7 @@
                     </div>
                 </div>
             </div>
-<!--  -->
+            <!--  -->
             <div class="col m3 s12">
                 <div class="card">
                     <div class="card-image waves-effect waves-block waves-light">
@@ -148,7 +148,7 @@
                     </div>
                 </div>
             </div>
-<!--  -->
+            <!--  -->
             <div class="col m3 s12">
                 <div class="card">
                     <div class="card-image waves-effect waves-block waves-light">
@@ -200,6 +200,8 @@
 
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="js/studentsClient.js"></script>
+    <script src="js/library.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             var elems = document.querySelectorAll('.sidenav');
@@ -219,6 +221,9 @@
             var options = {};
             var instances = M.Parallax.init(elems, options);
         });
+    </script>
+    <script>
+        getStudents().then(data => displayStudents(data, document.getElementById("container")))
     </script>
 </body>
 

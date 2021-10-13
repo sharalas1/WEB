@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tipai</title>
+</head>
+
+<body>
+
+    <input type="text" value="Jonas" id="name">
+    <input type="text" value="Jonaitis" id="surname">
+
+
+    <script>
+
+        // skaiciai
+        let firstNumber = 5.2;
+        let secondNumber = 10;
+        console.log(firstNumber + secondNumber);
+
+        let firstNumber1 = "5.2"; // jeigu stringas tai sumoje viskas yra stringas
+        let secondNumber1 = 10;
+        // su Number() padarom kad firstNumber1 butu skaicius o ne stringas
+        console.log(Number(firstNumber1) + secondNumber1);
+
+
+        // tekstas
+        // tas pats tik kitu budu parasyta
+        let name = document.getElementById("name").value
+        let surname = "Jonaitis";
+
+        // su pliusu
+        console.log(name + " " + surname);
+
+        // su concat
+        console.log(name.concat(" ", surname));
+
+        // indexOf
+        let text = "laba diena grazi diena";
+        let position = text.indexOf("diena");
+        // grazina tik viena diena
+        // jeigu tokio zodzio nera isspausdins -1 tai reiskia kad nerado tokio zodzio
+        console.log(position);
+
+        // substring
+        // rasom iki kelintos pozicijos atskirti
+        let newText = text.substring(0, 10);
+        console.log(newText);
+
+        // split 
+        // galima panaudoti su csv failais
+        // iskerpa ta ka parasom, jeigu parasytum a tai nebutu a raidziu
+        let words = text.split(" ");
+        console.log(words);
+        console.log(words[1]);
+
+        // boolean
+        let flag = true;
+
+        if(flag){
+            console.log("flag is true");
+        }
+        else{
+            console.log("flag is false");
+        }
+
+        let a = 5;
+        let b = 1;
+        let flag1 = a > b;
+        if(a > b){
+            console.log("flag is true");
+        }
+        else{
+            console.log("flag is false");
+        }
+
+        // uzkrausi begalini cikla nulausi svetaine prades kraur kraut ir kraut ir prades striginet atminties belekiek bus uzimamos
+        // while(flag1){
+        //     console.log("flag is true");
+        // }
+
+
+        // for ciklas
+        for (let index = 0; index < 5; index++) {
+            console.log(index);
+        }
+    </script>
+</body>
+
+</html>

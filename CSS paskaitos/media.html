@@ -31,8 +31,10 @@
 
     <div class="container">
 
-        <div class="row">
-            <div class="child">
+        <div class="row" id="items">
+<!-- dinamiskai uzkraunamas turinys -->
+
+            <!-- <div class="child">
                 <div class="content">
                     <img src="picture.jpg" alt="">
                     <p>aaaaaaa</p>
@@ -57,13 +59,21 @@
                     <p>ggggggg</p>
                     <p>hhhhh</p>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 
     <footer class="container">
         <address>sarunasvildziunas@gmail.com</address>
     </footer>
+
+    <script src="js/library.js"></script>
+    <script>
+        let items = getItems();
+        displayItems(items, document.getElementById("items"));
+
+
+    </script>
 </body>
 
 </html>
